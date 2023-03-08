@@ -1,22 +1,16 @@
-const videoContainers = document.querySelectorAll('.video-container');
-
-videoContainers.forEach(container => {
-  const link = container.querySelector('a');
-  const iframe = container.querySelector('iframe');
-
-  link.addEventListener('click', e => {
-    e.preventDefault();
-
-    const videoUrl = link.getAttribute('href');
-    iframe.setAttribute('src', videoUrl);
-
-    container.classList.add('active');
-  });
-
-  container.addEventListener('click', e => {
-    if (e.target === container) {
-      container.classList.remove('active');
-      iframe.setAttribute('src', '');
-    }
-  });
-});
+function playVideo(videoUrl) {
+  var overlay = document.createElement('div');
+  overlay.id = 'overlay';
+  
+  var iframe = document.createElement('iframe');
+  iframe.src = videoUrl;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('frameborder', '0');
+  
+  overlay.appendChild(iframe);
+  document.body.appendChild(overlay);
+  
+  overlay.onclick = function() {
+    document.body.removeChild(overlay);
+  };
+}
