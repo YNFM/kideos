@@ -4,70 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kideos</title>
-    <style>
-      body {
-        background-color: #000;
-        color: #fff;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-      }
-      
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      
-      h1 {
-        text-align: center;
-        font-size: 48px;
-        margin: 0 0 20px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
-      }
-      
-      ul.video-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      ul.video-list li {
-        margin-bottom: 20px;
-      }
-      
-      .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-      }
-      
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-      
-      @media (max-width: 767px) {
-        .video-container {
-          padding-bottom: 75%;
-        }
-        
-        .video-container iframe {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 0;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
@@ -75,111 +12,42 @@
       <ul class="video-list">
         <li>
           <div class="video-container">
-            <a href="https://www.youtube.com/embed/draHA_9MS18" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
+            <a href="https://www.youtube.com/embed/draHA_9MS18" target="_blank">
               <img src="https://i.ytimg.com/vi/draHA_9MS18/hqdefault.jpg" alt="Thumbnail for video 1">
             </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/draHA_9MS18" frameborder="0" allowfullscreen></iframe>
-            </div>
           </div>
         </li>
         <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/draHA_9MS18" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/draHA_9MS18/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/draHA_9MS18" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+              <a href="https://www.youtube.com/embed/9aehwiL6U18" target="_blank">
+                <img src="https://i.ytimg.com/vi/9aehwiL6U18/hqdefault.jpg" alt="Thumbnail for video 2">
+              </a>
             </div>
-          </div>
         </li>
         <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/9aehwiL6U18" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/9aehwiL6U18/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/9aehwiL6U18" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+              <a href="https://www.youtube.com/embed/Gqrli3Lkf58" target="_blank">
+                <img src="https://i.ytimg.com/vi/Gqrli3Lkf58/hqdefault.jpg" alt="Thumbnail for video 3">
+              </a>
             </div>
-          </div>
         </li>
         <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/Gqrli3Lkf58" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/Gqrli3Lkf58/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/Gqrli3Lkf58" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+              <a href="https://www.youtube.com/embed/fK6sYVQCqhs" target="_blank">
+                <img src="https://i.ytimg.com/vi/fK6sYVQCqhs/hqdefault.jpg" alt="Thumbnail for video 4">
+              </a>
             </div>
-          </div>
         </li>
         <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/fK6sYVQCqhs" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/fK6sYVQCqhs/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/fK6sYVQCqhs" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+              <a href="https://www.youtube.com/embed/TaIvNjY_KC8" target="_blank">
+                <img src="https://i.ytimg.com/vi/TaIvNjY_KC8/hqdefault.jpg" alt="Thumbnail for video 5">
+              </a>
             </div>
-          </div>
         </li>
-        <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/Y8kcZkqEIIo" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/Y8kcZkqEIIo/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/Y8kcZkqEIIo" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/tEUn7oYlAUA" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/tEUn7oYlAUA/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/tEUn7oYlAUA" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/roQovDZeAWE" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/roQovDZeAWE/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/roQovDZeAWE" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="video-container">
-            <a href="https://www.youtube.com/embed/N37x4GgDVBM" onclick="event.preventDefault(); document.getElementById('video1').style.display='block'">
-              <img src="https://i.ytimg.com/vi/N37x4GgDVBM/hqdefault.jpg" alt="Thumbnail for video 1">
-            </a>
-            <div id="video1" style="display: none;">
-              <iframe src="https://www.youtube.com/embed/N37x4GgDVBM" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </li>
-    </ul>
-  </div>
-  <script>
-    const videoContainers = document.querySelectorAll('.video-container');
-    videoContainers.forEach(container => {
-      const thumbnail = container.querySelector('img');
-      const videoUrl = container.querySelector('a').getAttribute('href');
-      const videoId = videoUrl.split('/').pop();
-      const iframe = document.createElement('iframe');
-      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-      container.addEventListener('click', () => {
-        container.removeChild(thumbnail);
-        container.appendChild(iframe);
-      });
-    });
-  </script>
-</body>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
