@@ -15,7 +15,7 @@
           margin: 5px;
         }
 
-        .youtube-player iframe {
+         .youtube-player iframe {
           position: absolute;
           top: 0;
           left: 0;
@@ -49,15 +49,23 @@
         }
 
         .youtube-player .play {
-          height: 72px;
-          width: 72px;
+          max-height: 100%;
+          max-width: 100%;
           left: 50%;
           top: 50%;
-          margin-left: -36px;
-          margin-top: -36px;
           position: absolute;
+          transform: translate(-50%,-50%);
           background: url('https://img.icons8.com/ios/256/youtube-play.png') no-repeat;
           cursor: pointer;
+        }
+
+        .responsive .center{
+          max-width:100%;
+          max-height:100%;
+          position: absolute;
+          top: 50%;
+          left: 50%; 
+          transform: translate(-50%, -50%);
         }
 
         h1 {
@@ -65,6 +73,10 @@
           font-size: 48px;
           margin: 0 0 20px;
           font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        .container{
+          position: relative;
         }
   </style>
   </head>
