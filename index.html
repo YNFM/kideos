@@ -21,6 +21,7 @@
           height: 0;
           overflow: hidden;
           max-width: 100%;
+          max-height: 50vh;
           background: #000;
           margin: 5px;
         }
@@ -59,16 +60,17 @@
         }
 
         .youtube-player .play {
-          height: 72px;
-          width: 72px;
-          left: 50%;
+          height: 100%;
+          width: 100%;
+          /* left: 50%;
           top: 50%;
-          margin-left: -36px;
-          margin-top: -36px;
+          margin-left: -10%;
+          margin-top: -10%; */
           position: absolute;
           background: url('https://img.icons8.com/ios/256/youtube-play.png') no-repeat;
-          background-size: 36px;
+          background-size: 15%;
           cursor: pointer;
+          background-position: center;
         }
 
         h1 {
@@ -82,7 +84,7 @@
   <body>
     <div class="container">
       <h1>Kideos</h1>
-      <div class="youtube-player" data-id="draHA_9MS18"></div>
+      <div class="boundary-box"><div class="youtube-player" data-id="draHA_9MS18"></div></div>
       <div class="youtube-player" data-id="9aehwiL6U18"></div>
       <div class="youtube-player" data-id="Gqrli3Lkf58"></div>
       <div class="youtube-player" data-id="fK6sYVQCqhs"></div>
