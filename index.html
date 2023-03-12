@@ -21,9 +21,33 @@
           height: 0;
           overflow: hidden;
           max-width: 100%;
-          max-height: 50vh;
+          max-height: 100%;
           background: #000;
           margin: 5px;
+        }
+
+        @media only screen and (min-width: 768px) {
+          .youtube-player {
+            position: relative;
+            padding-bottom: 28%;
+            height: 0;
+            overflow: hidden;
+            max-width: 48%;
+            max-height: 48%;
+            background: #000;
+            margin: 5px;
+            /*display: inline-block;*/
+          }
+
+          .youtube-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            z-index: 100;
+            background: transparent;
+          }
         }
 
         .youtube-player iframe {
@@ -84,7 +108,7 @@
   <body>
     <div class="container">
       <h1>Kideos</h1>
-      <div class="boundary-box"><div class="youtube-player" data-id="draHA_9MS18"></div></div>
+      <div class="youtube-player" data-id="draHA_9MS18"></div>
       <div class="youtube-player" data-id="9aehwiL6U18"></div>
       <div class="youtube-player" data-id="Gqrli3Lkf58"></div>
       <div class="youtube-player" data-id="fK6sYVQCqhs"></div>
